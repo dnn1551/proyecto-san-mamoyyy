@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="heartCanvas"></canvas>
+
+    <div class="container">
+        <h1 class="message" onclick="showCard()">Feliz San Valentín, mi amor ❤️</h1>
+    </div>
+
+    <!-- Primera Carta -->
+    <div class="card" id="card1">
+        <div class="card-content">
+            <h2>Para mi Mamoy, mi todo ❤️</h2>
+            <p>Mi amor, en este día tan especial quiero recordarte lo afortunado que me siento de tenerte...</p>
+            <button onclick="closeCard1()">Cerrar Carta</button>
+        </div>
+    </div>
+
+    <!-- Segunda Carta -->
+    <div class="card" id="card2">
+        <div class="card-content">
+            <h2>Oh, tienes otra carta, veamos qué es...</h2>
+            <button onclick="openSecondCard()">Abrir Carta</button>
+        </div>
+    </div>
+
+    <!-- Propuesta de San Valentín -->
+    <div class="card" id="proposal">
+        <div class="card-content">
+            <h2>Mamoy, ¿quieres tú ser mi San Valentín? ❤️</h2>
+            <img src="cinnamoroll.png" alt="Cinnamoroll con ojos de corazones" class="cinnamoroll">
+            <button class="yes-button" onclick="showFinalMessage()">¡Sí quiero!</button>
+        </div>
+    </div>
+
+    <!-- Mensaje Final -->
+    <div class="final-message" id="finalMessage">
+        <p>Gracias, mi amor, por ser la mejor parte de mi vida. Te amo con todo mi corazón. ❤️</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
